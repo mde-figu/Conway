@@ -26,4 +26,4 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.graphics', 'javafx.fxml', 'javafx.media' ]
 }
 
-mainClassName = 'com.almasb.fxglgames.drop.DropApp'
+mainClassName = 'com.almasb.fxglgames.conway.gameOfLife'
