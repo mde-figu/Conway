@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 public class gameOfLife extends Application {
 
-    private static final int GRID_SIZE_CELLS = 3;
+    private static final int GRID_SIZE_CELLS = 30;
     private static final int CELLS_SIZE = 30;
     @Override
     public void start(Stage stage) throws Exception {
@@ -43,7 +43,7 @@ public class gameOfLife extends Application {
             setTranslateY(y * CELLS_SIZE);
 
             bg = new Rectangle(CELLS_SIZE, CELLS_SIZE);
-
+            bg.setStroke(Color.WHITE);
             getChildren().add(bg);
         }
         void flip() {
