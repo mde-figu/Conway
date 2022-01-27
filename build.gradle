@@ -5,7 +5,7 @@ plugins {
 }
 
 application {
-    mainModule = 'drop.main'
+    mainModule = 'gameOfLife.main'
 }
 
 repositories {
@@ -17,8 +17,8 @@ repositories {
 }
 
 dependencies {
-    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.4.30'
-    compile 'com.github.almasb:fxgl:11.16'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.6.0'
+    implementation 'com.github.almasb:fxgl:11.17'
 }
 
 javafx {
@@ -26,4 +26,4 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.graphics', 'javafx.fxml', 'javafx.media' ]
 }
 
-mainClassName = 'com.almasb.fxglgames.conway.gameOfLife'
+mainClassName = 'com.mdefigu.fxglgames.conway.gameOfLife'

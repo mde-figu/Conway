@@ -1,6 +1,4 @@
-/**
- * @author Almas Baimagambetov (almaslvl@gmail.com)
- */
-open module drop.main {
+open module gameOfLife.main {
     requires com.almasb.fxgl.all;
 }
+
