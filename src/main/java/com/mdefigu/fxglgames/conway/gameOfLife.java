@@ -24,7 +24,7 @@ public class gameOfLife extends Application {
         root.setPrefSize(GRID_SIZE_CELLS * CELLS_SIZE, GRID_SIZE_CELLS * CELLS_SIZE );
 
         for (int y = 0; y < GRID_SIZE_CELLS; y++) {
-            for (int x = 0; x < GRID_SIZE_CELLS; y++){
+            for (int x = 0; x < GRID_SIZE_CELLS; x++){
                 Cell cell = new Cell(x, y);
 
                 root.getChildren().add(cell);
