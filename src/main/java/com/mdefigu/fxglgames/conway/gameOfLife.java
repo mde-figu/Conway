@@ -1,8 +1,12 @@
 package com.mdefigu.fxglgames.conway;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
@@ -27,9 +31,18 @@ public class gameOfLife extends Application {
             for (int x = 0; x < GRID_SIZE_CELLS; x++){
                 Cell cell = new Cell(x, y);
 
+                cell.setOnMouseClicked(e -> {
+                    cell.flip();
+                });
                 root.getChildren().add(cell);
             }
         }
+        root.setOnKeyPressed(ke -> {
+            KeyCode keyCode = ke.getCode();
+            if (keyCode.equals(KeyCode.ENTER)) {
+                //TODO
+            }
+        });
         return root;
     }
 
